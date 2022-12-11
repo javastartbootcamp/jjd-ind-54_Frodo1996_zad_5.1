@@ -3,9 +3,14 @@ package pl.javastart.task;
 import java.util.Scanner;
 
 public class CoordinateSystem {
+    Quarter point = new Quarter();
 
-    // uzupełnij metodę. Używaj scannera przekazanego w parametrze.
-    void run(Scanner scanner) {
-        System.out.println("Punkt (5, -3)");
+    public void run(Scanner scanner) {
+        System.out.println(System.in);
+        System.out.println("Podaj X");
+        int x = scanner.nextInt();
+        System.out.println("Podaj Y");
+        int y = scanner.nextInt();
+        System.out.println("Punkt" + " (" + x + "," + y + ")" + point.quarterCheck(x, y));
     }
 }
